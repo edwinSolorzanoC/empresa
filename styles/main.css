@@ -42,6 +42,9 @@ header .navegacion a{
     text-decoration: none;
     margin: 0% 5%;
 }
+header .mostrar{
+    display: none;
+}
 
 
 p{
@@ -97,4 +100,23 @@ footer p{
         font-weight: bold;
     }
         
+}
+@media screen and (max-width: 500px){
+    header .navegacion{
+        display: none;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    header .navegacion a{
+        margin-top: 1%;
+        display: block;
+    }
+    header .mostrar{
+        text-align: center;
+        display: block;
+        margin-top: 2%;
+    }
+    header .mostrar i{
+        color: white;
+        text-decoration: none;
+    }
 }
