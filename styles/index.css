@@ -20,12 +20,12 @@
 }
 
 @media screen and (max-width:600px){
- .inicio .informacion h1{
-    font-size: 3rem;
- }
- .inicio .informacion p{
-    font-size: 1.5rem;
-}
+    .inicio .informacion h1{
+        font-size: 3rem;
+    }
+    .inicio .informacion p{
+        font-size: 1.5rem;
+    }
 }
 .ofrecemos{
     width: 100%;

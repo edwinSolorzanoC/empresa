@@ -81,6 +81,7 @@ footer p{
         display: block;
     }
     header .titulo{
+        padding-top: 2%;
         width: 100%;
         text-align: center;
     }
