@@ -3,12 +3,20 @@
 .inicio .informacion{
     margin-bottom: 10%;
     border-left: 2px solid rgba(255, 255, 255, 0.254);
-    padding-left: 1%;
+    padding-left: .5rem;
 }
 
 .inicio .informacion p{
     font-size: 2rem;
 }
+
+.inicio .informacion h1 {
+    background: linear-gradient(90deg, #00e1ff, #c800ff);
+    background-clip: text; /* estándar */
+    -webkit-background-clip: text; /* necesario para Chrome/Safari */
+    -webkit-text-fill-color: transparent;
+}
+
 .inicio .informacion input[type="button"]{
     background-color: #ff4081;
     box-shadow: 0px 3px 30px 3px #ff408058;
@@ -24,7 +32,7 @@
         font-size: 3rem;
     }
     .inicio .informacion p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 .ofrecemos{
@@ -53,12 +61,16 @@
     color: rgb(255, 255, 255) !important;
 
 }
-.ofrecemos .flex div{
+.ofrecemos .flex article{
     text-align: center;
     padding: 0.5%;
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
 }
-.ofrecemos .flex div input[type="button"]{
+
+.ofrecemos .flex article input[type="button"]{
     /* background: linear-gradient(to right, rgb(208, 32, 61), rgb(218, 99, 13)); */
     background-color: #ff4081;
     color: rgb(255, 255, 255);
@@ -66,6 +78,14 @@
     padding: 1% 2.5%;
     border-radius: 10px;
     font-weight: bold;
+}
+.ofrecemos article header, .ofrecemos article footer{
+    background: none;
+    border: none;
+    justify-content: center;
+}
+.ofrecemos article footer{
+    margin-top: auto;
 }
 
 @media screen and (max-width:1500px){
@@ -78,16 +98,23 @@
         width: 100%;
         border-radius: 10px;
     }
-    .ofrecemos .flex div{
+    .ofrecemos .flex article{
         text-align: start;
         padding: 5%;
         width: 100%;
     }
+    .ofrecemos article header, .ofrecemos article footer{
+        justify-content: start;
+        text-align: start;
+    }
+
 }
 
 
 .proyectos{
     margin-bottom: 10%;
+    border-left: 2px solid rgba(255, 255, 255, 0.254);
+    padding-left: .5rem;
 }
 .proyectos .vetcont {
     margin-bottom: 5%
@@ -148,6 +175,9 @@
 .contacto form input, .contacto form select{
     display: block;
 }
+.contacto form label{
+    font-size: 1.2rem;
+}
 .contacto .opciones{
     display: flex;
 }
@@ -173,3 +203,4 @@
         margin: 2% 0%;
     }
 }
+

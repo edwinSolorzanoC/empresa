@@ -23,6 +23,8 @@ main{
     min-height: 100vh;
     padding: 10%;
 }
+
+
 header{
     background-color: rgb(2, 11, 23);
     border-bottom: 2px solid rgba(255, 255, 255, 0.266);

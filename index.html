@@ -21,14 +21,6 @@
         <div class="titulo">
             Edwin Solorzano Campos | Soluciones Web
         </div>
-        <div class="navegacion" id="navegacion">
-            <a href="">Informacion</a>
-            <a href="">Sobre Nosotros</a>
-            <a href="">Contactenos</a>
-        </div>
-        <div class="mostrar">
-            <i class="fa-solid fa-bars-staggered" id="mostrarMenu"></i>
-        </div>
     </header>
     <main>
 
@@ -44,29 +36,42 @@
             <h2>Adquiere Nuestros Servicios</h2>
 
             <div class="flex">
-                <div>
-                    <h3>Soluciones Web Personalizadas</h3>
-                    <p>Desarrollamos tu pagina, sitio, plataforma o sistema web,
-                         tal y como los requisitos de tu empresa lo solicite
-                    </p>
-                    <input type="button" value="Solicitar">
-                </div>
-                <div>
-                    <h3>Mantenimiento y Optimización de Sitios Existentes</h3>
-                    <p>Brindamos mantenimiento al sistema web de tu empresa para optimizar, mejorar y añadir procesos clave para el correcto funcionamiento esperado</p>
-                    <input type="button" value="Solicitar">
-                    
-                </div>
-                <div>
-                    <h3>Modernizacion / Rediseño de Softwares Web Antiguos</h3>
-                    <p>Rejuvenecemos tu sistema web, logrando una atraccion al uso contante y una disminucion en la fatiga visual</p>
-                    <input type="button" value="Solicitar">
-                </div>
-                <div>
-                    <h3>Proyectos en Operación</h3>   
+                <article>
+                    <header>
+                        <h3>Soluciones Web Personalizadas</h3>
+                    </header>
+                    <p>Desarrollamos tu pagina, sitio, plataforma o sistema web</p>
+                    <footer>
+                        <input type="button" value="Mas Información">
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Mantenimiento y Optimizacion</h3>
+                    </header>
+                    <p>Brindamos mantenimiento a sistemas web existentes</p>
+                    <footer>
+                        <input type="button" value="Mas Información">
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Modernizacion y Rediseño</h3>
+                    </header>
+                    <p>Damos una mejora visual de tu sistema web</p>
+                    <footer>
+                        <input type="button" value="Mas Información">
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Proyectos en Operacion</h3>
+                    </header>
                     <p>Contamos con distintas plataformas que se pueden acoplar a lo que buscas</p>
-                    <input type="button" value="Solicitar">
-                </div>
+                    <footer>
+                        <input type="button" value="Mas Información">
+                    </footer>
+                </article>
             </div>
         </section>
 
@@ -91,19 +96,21 @@
             <h2>Ponte en contacto con nosotros </h2>
 
             <form action="">
-                <label for="username">Nombre de Empresa: </label>
-                <input id="username" type="text" placeholder="...">
-                <label for="motivo">Selecciona servicio que te gustaria adquirir: </label>
+                <label for="username">Cuentame quien nos habla: </label>
+                <input id="username" type="text" placeholder="" required>
+                
+                <label for="motivo">Selecciona servicio que te gustaria connsultar: </label>
                 <select name="motivo" id="motivo" required>
                     <option value="" selected disabled>Selecciona una opción</option>
                     <option value="solucion">Solución web personalizada</option>
                     <option value="mantenimiento">Mantenimiento / Optimización</option>
                     <option value="modernizacion">Modernización / Rediseño</option>
                     <option value="servicios">Servicios web</option>
+                    <option value="otro">Otro</option>
                 </select>
 
                 <label for="descripcion">Añade una descripcion: </label>
-                <input type="text" id="descripcion" placeholder="...">
+                <input type="text" id="descripcion" placeholder="" required>
                 <div class="opciones">
                     <input type="submit" value="Enviar">
                     <input type="reset">
