@@ -103,7 +103,7 @@
         padding: 5%;
         width: 100%;
     }
-    .ofrecemos article header, .ofrecemos article footer{
+    .ofrecemos article header{
         justify-content: start;
         text-align: start;
     }
